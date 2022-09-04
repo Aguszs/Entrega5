@@ -1,0 +1,7 @@
+:root{
+    --background:#252525;
+    --yelow:#ffa400;
+    --red:#fc2933;
+    --white:#ffffff;
+    --buttom:linear-gradient(90deg, rgba(255,161,0,1) 36%, rgba(251,16,61,1) 68%);
+}
