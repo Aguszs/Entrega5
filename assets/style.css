@@ -56,3 +56,190 @@ b {
   font-weight: 800;
   font-family: "Montserrat", sans-serif;
 }
+
+
+body {
+  background-color:black;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  justify-content: center;
+}
+
+.hero-info {
+  display: flex;
+  width: 100%;
+  color: #ffffff;
+  justify-content: space-around;
+  align-items: center;
+  gap: 300px;
+}
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  top: 45px;
+}
+
+.slogan h1 {
+  font-size: 46px;
+  font-weight: 600;
+}
+
+.slogan h2 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.slogan p {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.slogan a {
+  width: 140px;
+  height: 35px;
+  background-image: -moz-linear-gradient(to top right , #FFA100, #FB103D);
+  font-size: 12px;
+  padding: 10px 22px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 10px;
+  
+}
+.imagen-pizza {
+  position: relative;
+  left: 100px;
+}
+.pizza1 {
+  width: 220px;
+  height: 220px;
+  position: relative;
+  bottom: 50px;
+}
+
+.pizza2 {
+  width: 370px;
+  height: 370px;
+  position: relative;
+  right: 150px;
+}
+
+#products {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+#products h3 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+}
+
+.product {
+  display: flex;
+  background-color:#252525;
+  width: 347px;
+  height: 105px;
+  border-radius: 15px;
+  
+}
+
+.product-cards {
+  display: flex;
+  gap: 35px;
+  justify-content:center;
+
+}
+
+.product-container {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: row;
+}
+
+.product img {
+  height: 62px;
+  width: 62px;
+  align-items: center;
+  margin-top: 21px;
+  margin-left: 14px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 20px;
+  gap: 5px;
+}
+
+.product-top {
+  font-size: 15px;
+  font-weight: 500;
+}
+.product-mid {
+  font-size: 14px;
+  font-weight: 100;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.product-bottom p {
+  
+ background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ font-size: 18px;
+ font-weight: 700;
+ 
+
+}
+
+
+.product a {
+  display: flex;
+  align-items: center;
+  background-image: -moz-linear-gradient(to top right , #FFA100, #FB103D);
+  width: 85px;
+  height: 29px;
+  padding: 10px 15px;
+  margin-top: 35px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 5px;
+  font-size: 12px;
+  justify-content: center;
+
+}
+
+
