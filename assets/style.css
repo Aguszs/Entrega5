@@ -1,5 +1,6 @@
 :root {
-  --background: #252525;
+  --background: #131415;
+  --background-cards: #252525;
   --yelow: #ffa400;
   --red: #fc2933;
   --white: #ffffff;
@@ -11,6 +12,7 @@
 }
 * {
   background-color: var(--background);
+  width: 100%;
 }
 
 nav {
@@ -55,4 +57,50 @@ p {
 b {
   font-weight: 800;
   font-family: "Montserrat", sans-serif;
+}
+
+
+/* Estilos Categorias */
+#categorias{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 40px;
+}
+#categorias h2{
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+  font-size: 13px;
+}
+.cat-menus{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.cat-cards section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 127px;
+  height: 151px;
+  background-color: var(--background-cards);
+  border-radius: 15px;
+}
+.cat-cards section img{
+  width: 51px;
+  background: none;
+}
+.cat-cards section p{
+  background: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+.barrita{
+  background: var(--buttom);
+  width: 24px;
+  height: 4px;
+  border-radius: 15px;
 }
