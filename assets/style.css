@@ -1,5 +1,6 @@
 :root {
-  --background: #252525;
+  --background: #131415;
+  --back-cards: #252525;
   --yelow: #ffa400;
   --red: #fc2933;
   --white: #ffffff;
@@ -10,94 +11,84 @@
   );
 }
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: var(--white);
+  text-decoration: none;
+}
+header {
+  display: flex;
+  align-items: center;
   background-color: var(--background);
+  justify-content: space-between;
+  height: 83px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding: 0 50px;
+  z-index: 2;
 }
 
+body {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  padding-left: 80px;
+}
+/*Header*/
+
+header img {
+  width: 50px;
+  height: 50px;
+}
 nav {
-  height: 79px;
-  width: 76px;
-  margin-left: 57px;
-  margin-top: 31px;
-  border-radius: 0px;
   display: flex;
   align-items: center;
 }
+
 .item li {
+  font-size: 15px;
+  font-weight: 400;
+}
+.item i {
   color: var(--yelow);
   font-size: 20px;
   margin-right: 20px;
 }
-
-.item {
-  margin-left: 1300px;
-}
-
-ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  padding: 60px 0;
-  color: #ffffff;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-size: 17px;
-}
-p {
-  font-weight: 200;
-  font-size: 18px;
-  color: #ffffff;
-  justify-content: center;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-}
-b {
-  font-weight: 800;
-  font-family: "Montserrat", sans-serif;
-}
-
-
-body {
-  background-color:black;
-}
-main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-}
-
-#hero {
-  display: flex;
-  flex-direction: column;
+.opacity {
+  opacity: 0.5;
 }
 
 .slogan {
   display: flex;
   flex-direction: column;
-  color: #ffffff;
   justify-content: center;
+  gap: 20px;
+}
+.slogan-titulo {
+  display: flex;
+  flex-direction: column;
+}
+/*Hero*/
+#hero {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .hero-info {
   display: flex;
   width: 100%;
-  color: #ffffff;
-  justify-content: space-around;
-  align-items: center;
-  gap: 300px;
-}
-
-.slogan {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  position: relative;
-  top: 45px;
+  justify-content: space-between;
 }
 
 .slogan h1 {
@@ -116,35 +107,38 @@ main {
   font-style: normal;
 }
 
-.slogan a {
-  width: 140px;
-  height: 35px;
-  background-image: -moz-linear-gradient(to top right , #FFA100, #FB103D);
-  font-size: 12px;
-  padding: 10px 22px;
-  text-align: center;
-  color: #ffffff;
+.slogan input {
+  font-size: 14px;
   font-weight: 700;
-  text-decoration: none;
-  border-radius: 10px;
-  
+  letter-spacing: 0.5px;
+  border-radius: 17.5px;
+  border: none;
+  padding: 5px 18px;
+  background: var(--buttom);
+  cursor: pointer;
+  width: 166px;
+  height: 50px;
+  margin-top: 50px;
 }
 .imagen-pizza {
-  position: relative;
   left: 100px;
 }
 .pizza1 {
-  width: 220px;
-  height: 220px;
-  position: relative;
-  bottom: 50px;
+  width: 265px;
+  height: 265px;
+  position: absolute;
+  left: 820px;
+  top: 158px;
+  z-index: 1;
 }
 
 .pizza2 {
-  width: 370px;
-  height: 370px;
-  position: relative;
-  right: 150px;
+  width: 392px;
+  height: 392px;
+  position: absolute;
+  left: 946px;
+  top: 44px;
+  z-index: 1;
 }
 
 #products {
@@ -154,7 +148,6 @@ main {
 }
 
 #products h3 {
-  color: #ffffff;
   font-size: 22px;
   font-weight: 500;
   position: relative;
@@ -163,18 +156,16 @@ main {
 
 .product {
   display: flex;
-  background-color:#252525;
+  background-color: #252525;
   width: 347px;
   height: 105px;
   border-radius: 15px;
-  
 }
 
 .product-cards {
   display: flex;
   gap: 35px;
-  justify-content:center;
-
+  justify-content: center;
 }
 
 .product-container {
@@ -194,7 +185,6 @@ main {
 .product-info {
   display: flex;
   flex-direction: column;
-  color: #ffffff;
   padding: 20px;
   gap: 5px;
 }
@@ -206,41 +196,52 @@ main {
 .product-mid {
   font-size: 14px;
   font-weight: 100;
-  color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.3;
 }
 
 .product-bottom p {
-  
- background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
- background-clip: text;
- font-size: 18px;
- font-weight: 700;
- 
-
+  background: linear-gradient(98.81deg, #ffa100 -0.82%, #ff005c 101.53%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 18px;
+  font-weight: 700;
 }
-
-
-.product a {
-  display: flex;
-  align-items: center;
-  background-image: -moz-linear-gradient(to top right , #FFA100, #FB103D);
+.product input {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 17.5px;
+  border: none;
+  padding: 5px 18px;
+  background: var(--buttom);
   width: 85px;
   height: 29px;
-  padding: 10px 15px;
-  margin-top: 35px;
-  border-radius: 20px;
-  color: #ffffff;
-  font-weight: 600;
-  text-decoration: none;
-  margin-left: 5px;
-  font-size: 12px;
-  justify-content: center;
-
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-
-
+/*Footer*/
+footer {
+  margin-bottom: 30px;
+}
+footer ul,
+header ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 60px 0;
+  font-size: 17px;
+}
+footer p {
+  font-weight: 200;
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+}
+footer b {
+  font-weight: 800;
+}
