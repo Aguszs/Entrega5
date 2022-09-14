@@ -10,6 +10,10 @@
     rgba(251, 16, 61, 1) 68%
   );
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 92aa76f2b5bb6c412167df14a10abadf5706cc8b
 * {
   margin: 0;
   padding: 0;
@@ -222,6 +226,88 @@ nav {
   margin-bottom: auto;
 }
 
+<<<<<<< HEAD
+
+
+/* Estilos de "Los más populares"*/
+
+/* Contenedor padre */
+
+.losmaspopulares h2{
+margin-top: 80px;
+margin-bottom: 30px;
+font-size: 22px;
+font-weight: 500;
+line-height: 28,83px;
+}
+
+.mas-populares {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+}
+
+/*  */
+.mr-pit,
+.q-jamone,
+.charly-garcia,
+.maradona,
+.picantovich,
+.hasbulla,
+.messi,
+.nick-gi {
+  display: flex;
+  flex-direction: column;
+  background-color: #252525;
+  gap: 8px;
+  width: 282px;
+  height: 213px;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.mas-populares h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.mas-populares p {
+  font-size: 14px;
+  font-weight: 400px;
+  letter-spacing: 0.5px;
+  opacity: 0.3;
+}
+
+.mas-populares span {
+  font-size: 19px;
+  font-weight: 700;
+  background: linear-gradient(to right, #ffa100, #fb103d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.mas-populares button {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 17.5px;
+  border: none;
+  padding: 5px 18px;
+  background: linear-gradient(to right, #ffa100, #fb103d);
+}
+
+.precio-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+=======
+>>>>>>> 92aa76f2b5bb6c412167df14a10abadf5706cc8b
 /*Footer*/
 footer {
   margin-bottom: 30px;
@@ -244,4 +330,8 @@ footer p {
 }
 footer b {
   font-weight: 800;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 92aa76f2b5bb6c412167df14a10abadf5706cc8b
