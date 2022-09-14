@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 :root {
   --background: #131415;
+  --back-cards: #252525;
   --yelow: #ffa400;
   --red: #fc2933;
   --white: #ffffff;
@@ -18,15 +17,226 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   color: var(--white);
+  text-decoration: none;
+}
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--background);
+  justify-content: space-between;
+  height: 83px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding: 0 50px;
+  z-index: 2;
 }
 
 body {
-  background-color: #131415;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  padding-left: 80px;
+}
+/*Header*/
+
+header img {
+  width: 50px;
+  height: 50px;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.item li {
+  font-size: 15px;
+  font-weight: 400;
+}
+.item i {
+  color: var(--yelow);
+  font-size: 20px;
+  margin-right: 20px;
+}
+.opacity {
+  opacity: 0.5;
+}
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.slogan-titulo {
+  display: flex;
+  flex-direction: column;
+}
+/*Hero*/
+#hero {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.hero-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.slogan h1 {
+  font-size: 46px;
+  font-weight: 600;
+}
+
+.slogan h2 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.slogan p {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.slogan input {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 17.5px;
+  border: none;
+  padding: 5px 18px;
+  background: var(--buttom);
+  cursor: pointer;
+  width: 166px;
+  height: 50px;
+  margin-top: 50px;
+}
+.imagen-pizza {
+  left: 100px;
+}
+.pizza1 {
+  width: 265px;
+  height: 265px;
+  position: absolute;
+  left: 820px;
+  top: 158px;
+  z-index: 1;
+}
+
+.pizza2 {
+  width: 392px;
+  height: 392px;
+  position: absolute;
+  left: 946px;
+  top: 44px;
+  z-index: 1;
+}
+
+#products {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+#products h3 {
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+}
+
+.product {
+  display: flex;
+  background-color: #252525;
+  width: 347px;
+  height: 105px;
+  border-radius: 15px;
+}
+
+.product-cards {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+}
+
+.product-container {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: row;
+}
+
+.product img {
+  height: 62px;
+  width: 62px;
+  align-items: center;
+  margin-top: 21px;
+  margin-left: 14px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 5px;
+}
+
+.product-top {
+  font-size: 15px;
+  font-weight: 500;
+}
+.product-mid {
+  font-size: 14px;
+  font-weight: 100;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.product-bottom p {
+  background: linear-gradient(98.81deg, #ffa100 -0.82%, #ff005c 101.53%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 18px;
+  font-weight: 700;
+}
+.product input {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 17.5px;
+  border: none;
+  padding: 5px 18px;
+  background: var(--buttom);
+  width: 85px;
+  height: 29px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
 
 /* Estilos de "Los más populares"*/
 
 /* Contenedor padre */
+
+.losmaspopulares h2{
+margin-top: 80px;
+margin-bottom: 30px;
+font-size: 22px;
+font-weight: 500;
+line-height: 28,83px;
+}
+
 .mas-populares {
   display: flex;
   flex-wrap: wrap;
@@ -89,4 +299,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+
+/*Footer*/
+footer {
+  margin-bottom: 30px;
+}
+footer ul,
+header ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 60px 0;
+  font-size: 17px;
+}
+footer p {
+  font-weight: 200;
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+}
+footer b {
+  font-weight: 800;
 }
