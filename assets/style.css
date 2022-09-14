@@ -10,7 +10,10 @@
     rgba(251, 16, 61, 1) 68%
   );
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 92aa76f2b5bb6c412167df14a10abadf5706cc8b
 * {
   margin: 0;
   padding: 0;
@@ -223,6 +226,7 @@ nav {
   margin-bottom: auto;
 }
 
+<<<<<<< HEAD
 
 
 /* Estilos de "Los más populares"*/
@@ -302,6 +306,8 @@ line-height: 28,83px;
 }
 
 
+=======
+>>>>>>> 92aa76f2b5bb6c412167df14a10abadf5706cc8b
 /*Footer*/
 footer {
   margin-bottom: 30px;
@@ -324,4 +330,8 @@ footer p {
 }
 footer b {
   font-weight: 800;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 92aa76f2b5bb6c412167df14a10abadf5706cc8b
