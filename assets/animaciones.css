@@ -1,0 +1,30 @@
+.slogan input:hover{
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+.item i:hover{
+    transform:scale(1.5);
+    transition: all 0.3s linear;
+}
+.pizza1, .pizza2{
+    animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+}
+.product input:hover{
+    transform:scale(1.1);
+    transition: all 0.3s linear; 
+}
+.mas-populares button:hover{
+    transform:scale(1.1);
+    transition: all 0.3s linear;  
+}
+
+
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
