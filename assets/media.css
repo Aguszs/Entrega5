@@ -1,0 +1,73 @@
+@media (max-width:992px) {
+    header{
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+    main{
+        padding-left: 0;
+        align-items: center;
+        justify-content: center;
+        margin-top:10px;
+    }
+   
+    .pizza1{
+        left: 100px;
+        top:400px
+    }
+    .pizza2{
+        left: 200px;
+        top:320px
+    }
+    .hero-info{
+        justify-content: center;
+    }
+    .slogan input{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #products{
+        margin-top: 250px;
+    }
+    .product-cards{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .mas-populares{
+        justify-content: center;
+    }
+    .losmaspopulares h2, #products h3{
+        padding-left: 60px;
+    }
+}
+@media(max-width:500px){
+    .pizza1,.pizza2{
+        display: none;
+    }
+    
+    .product-cards{
+       gap: 0;
+    }
+    .product-container{
+        margin: 15px;
+    }
+    #hero{
+        gap: 30px;
+    }
+    #products{
+        margin-top: 0;
+    }
+   
+    #products h3{
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+    .losmaspopulares h2{
+        margin-top: 30px;
+        padding-left: 30px;
+    }
+    .footer{
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+}

@@ -221,6 +221,13 @@ nav {
   margin-top: auto;
   margin-bottom: auto;
 }
+.notificaciones{
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right:150px;
+  top:21px;
+}
 
 
 
