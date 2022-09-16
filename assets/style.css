@@ -40,7 +40,6 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: 80px;
-  padding-left: 80px;
 }
 
 /*Header*/
@@ -89,6 +88,7 @@ nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  padding-left: 50px;
 }
 
 .slogan h1 {
@@ -150,6 +150,7 @@ nav {
 #products h3 {
   font-size: 22px;
   font-weight: 500;
+  padding-left: 50px;
   position: relative;
   display: flex;
 }
@@ -237,12 +238,12 @@ nav {
   margin-bottom: 30px;
   font-size: 22px;
   font-weight: 500;
+  padding-left: 50px;
   position: relative;
   display: flex;
 }
 .categorias{
   width: 100%;
-  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -288,6 +289,7 @@ nav {
 
 .losmaspopulares h2{
 margin-top: 30px;
+padding-left: 50px;
 margin-bottom: 30px;
 font-size: 22px;
 font-weight: 500;
@@ -297,6 +299,7 @@ line-height: 28,83px;
 .mas-populares {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 15px;
   width: 100%;
 }
@@ -373,6 +376,9 @@ header ul {
   gap: 50px;
   padding: 60px 0;
   font-size: 17px;
+}
+.footer li{
+  cursor: pointer;
 }
 footer p {
   font-weight: 200;

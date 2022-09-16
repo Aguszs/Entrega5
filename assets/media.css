@@ -20,6 +20,8 @@
     }
     .hero-info{
         justify-content: center;
+        text-align: center;
+        padding-left: 0;
     }
     .slogan input{
         margin-left: auto;
@@ -35,13 +37,35 @@
     .mas-populares{
         justify-content: center;
     }
-    .losmaspopulares h2, #products h3{
-        padding-left: 60px;
+    .losmaspopulares {
+        justify-content: center; 
+        text-align: center;  
+    }
+    .losmaspopulares h2{
+        padding-left: 0;
+    }
+     #products h3 {
+        padding-left: 0;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 30px;
+    }
+    .titulo{
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
     }
 }
 @media(max-width:500px){
     .pizza1,.pizza2{
         display: none;
+    }
+    .item{
+        gap: 20px;
+    }
+    .notificaciones{
+        right: 120px;
     }
     
     .product-cards{
@@ -57,14 +81,6 @@
         margin-top: 0;
     }
    
-    #products h3{
-        padding-left: 30px;
-        padding-bottom: 30px;
-    }
-    .losmaspopulares h2{
-        margin-top: 30px;
-        padding-left: 30px;
-    }
     .footer{
         flex-direction: column;
         gap: 15px;
